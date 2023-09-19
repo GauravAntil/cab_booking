@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <style>
+      body {
+          background-image: url("https://img.freepik.com/free-vector/copy-space-bokeh-spring-lights-background_52683-55649.jpg?w=2000");
+          background-size: cover;
+/*background-color: #f2f2f2;*/
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      form {
+        background-color: #ffffff;
+        border: 2px solid #dddddd;
+        border-radius: 5px;
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      input[type="reset"] {
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      a {
+          text-decoration: none;
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+      input[type="reset"]:hover {
+        background-color: #3e8e41;
+      }
+      a:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Admin Login</h1>
+    <form action="adminlogin.jsp" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Password" name="password" required>
+      <input type="submit"  name="action" value="Login">
+      <input type="reset" name="action" value="Reset">
+      <a href="index.html">Back</a>
+    </form>
+  </body>
+</html>

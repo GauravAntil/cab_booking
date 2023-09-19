@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Cab</title>
+	<style>
+            
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		form {
+			background-color: yellowgreen;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		input[type=text], input[type=password],input[type=number] {
+			width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #ccc;
+		}
+
+		input[type="submit"] {
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+                .btn submit{
+                   width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0px 0px 5px #ccc; 
+                }
+                /* .vh {
+                   width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 3px;
+			box-shadow: 0px 0px 5px #ccc;
+                } */
+                .container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+        select {
+			padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 490px;
+    margin-top: -33px;
+    margin-left: -5PX;
+		}
+        a {
+            text-decoration: none;
+        background-color: #4CAF50;
+        color: #ffffff;
+        
+        border: none;
+        border-radius: 15px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+	</style>
+</head>
+<body>
+    <form action="add_cabs.jsp">
+		<h2>Add Cabs</h2>
+		<label for="name"> Driver Name</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" required>
+                
+                <label for="contact">Contact</label>
+		<input type="number" id="contact" name="contact" required>
+                
+                <label for="type">Vehicle Type</label>
+                
+                <div class="container">
+                    <select name="type">
+                        <option value="">--Please select an option--</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Luxury">Luxury</option>
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="Supper Deluxe"> Super Deluxe</option>
+                    </select>
+                </div>
+                <label for="vehicle">Vehicle No.</label>
+		<input type="text" id="vehicle" name="vehicle" required>
+                
+		
+               
+                <input type="submit" value="Add" name="action">
+                <a href="admin.html">Back</a>
+	</form>
+</body>
+</html>

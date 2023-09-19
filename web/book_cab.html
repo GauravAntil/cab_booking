@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      /* CSS styles for the form */
+      form {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: tomato;
+    width: 400px;
+    height: auto;
+    margin-left: 400px;
+    margin-top: 15px;
+    border-radius: 20px
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"],
+      input[type="time"] {
+        padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 140px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    font-size: 20px
+      }
+      
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .error {
+        color: red;
+        margin-bottom: 10px;
+      }
+      h1{
+        text-align: center;
+      }
+      .container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+        select {
+			padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 219px;
+    margin-top: -33px;
+    margin-left: -5PX
+		}
+                body{
+                    background-color: aquamarine;
+                }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Book Cab</h1>
+    <form  action="book_cab.jsp" method="post">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact" required>
+
+      <label for="type">Vehicle Type</label>
+                
+                <div class="container">
+                    <select name="type">
+                        <option value="">--Please select an option--</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Luxury">Luxury</option>
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="Supper Deluxe"> Super Deluxe</option>
+                    </select>
+                </div>
+
+                <label for="arrival">Source:</label>
+                <input type="text" id="arrival" name="arrival" required>
+                  
+                <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" required>
+
+      <label for="date">Date:</label>
+      
+      <input type="date" id="date" name="date" required>
+        
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+
+      
+
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
